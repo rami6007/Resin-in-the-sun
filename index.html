@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lena Younger's Facebook Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4267B2;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .facebook-logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .search-bar-container {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #dddfe2;
+            background-color: #fff;
+            font-size: 14px;
+        }
+        .profile-container {
+            display: flex;
+            margin: 20px;
+        }
+        .profile-sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background-color: #e4e6eb;
+        }
+        .profile-info {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+        }
+        .profile-info h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .bio {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #606770;
+        }
+        .status-update {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+        }
+        .status-header {
+            font-weight: bold;
+        }
+        .status-text {
+            margin: 10px 0;
+        }
+        .likes-dislikes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .likes-dislikes button {
+            padding: 8px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .likes-dislikes button:hover {
+            background-color: #e4e6eb;
+        }
+        .likes-dislikes i {
+            font-size: 20px;
+        }
+        .likes-count, .dislikes-count {
+            font-size: 14px;
+            color: #606770;
+        }
+        .post-photo {
+            margin-top: 15px;
+            width: 100%;
+            height: 200px;
+            background-color: #e4e6eb;
+            text-align: center;
+            line-height: 200px;
+            color: #606770;
+        }
+        .post-date {
+            font-size: 12px;
+            color: #606770;
+        }
+        .followers-container {
+            margin-top: 20px;
+        }
+        .followers-container h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .family-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .family-member img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .family-member p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Facebook Header -->
+    <div class="header">
+        <div class="facebook-logo">Facebook</div>
+        <div class="search-bar-container">
+            <input class="search-bar" type="text" placeholder="Search Facebook">
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-sidebar">
+            <div class="profile-picture">
+                <img src="profile_picture_placeholder.jpg" alt="Lena's Picture" style="width:100%; height:100%; border-radius:50%; object-fit: cover;">
+            </div>
+            <h2>Lena Younger</h2>
+            <p>Mother, Dreamer, Faithful</p>
+
+            <!-- Bio Section -->
+            <div class="bio">
+                <p><strong>About Me:</strong> I am a mother of two children, Ruth and Walter, and I believe in the strength of family and faith. I’ve spent my life working hard and dreaming of a better future for my family. Despite all the hardships, I keep my hope alive, holding onto the belief that God will guide us through our struggles. I’m a proud believer, and I find peace tending to my garden and remembering my late husband, Big Walter.</p>
+            </div>
+
+            <!-- Family/Friends -->
+            <div class="followers-container">
+                <h3>Family & Friends</h3>
+                <div class="family-member">
+                    <img src="walter_picture.jpg" alt="Walter's Picture">
+                    <p>Walter Lee Younger (son)</p>
+                </div>
+                <div class="family-member">
+                    <img src="beneatha_picture.jpg" alt="Beneatha's Picture">
+                    <p>Beneatha Younger (daughter)</p>
+                </div>
+                <div class="family-member">
+                    <img src="ruth_picture.jpg" alt="Ruth's Picture">
+                    <p>Ruth Younger (daughter-in-law)</p>
+                </div>
+                <div class="family-member">
+                    <img src="bigwalter_picture.jpg" alt="Big Walter's Picture">
+                    <p>Big Walter (husband, deceased)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <!-- Status Updates -->
+
+            <!-- Post 1: Reflecting on Walter's Struggles -->
+<div class="status-update" id="post1">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">When I think about Walter’s dream, I can feel the weight of it in my chest. I know he's struggling, but I just want him to see the good in himself. He has so much potential. I can only pray he finds his way.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post1')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post1')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: February 15, 1960</div>
+</div>
+
+<!-- Post 2: Supporting Beneatha's Dreams -->
+<div class="status-update" id="post2">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Beneatha has always been the dreamer, and I admire her for that. She wants to be a doctor, and I want to support her, though sometimes I worry about the challenges she’ll face as a black woman in this world.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post2')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post2')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: February 20, 1960</div>
+</div>
+
+<!-- Post 3: A Tribute to Big Walter -->
+<div class="status-update" id="post3">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I still miss Big Walter every day. He worked so hard for us, and I know that everything I do is for his memory. He wanted more for us. I just wish he could’ve seen us fulfill those dreams.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post3')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post3')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: March 1, 1960</div>
+</div>
+
+<!-- Post 4: A Hopeful Prayer for the Future -->
+<div class="status-update" id="post4">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Dear Lord, I pray that my children find their way in this world. I pray they hold on to the values we taught them and make a difference in their lives and the world. Please watch over them.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post4')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post4')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: March 5, 1960</div>
+</div>
+
+<!-- Post 5: The Struggle to Provide -->
+<div class="status-update" id="post5">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Every day, I work hard to provide for my family, but sometimes it feels like there’s just never enough. I’m doing the best I can, but I wish I could do more.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post5')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post5')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: March 10, 1960</div>
+</div>
+
+<!-- Post 6: A Memory of Big Walter -->
+<div class="status-update" id="post6">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I remember when Big Walter bought me this house. He said it was a dream come true. I think of him every time I walk through the door. I just want to honor his memory and make him proud.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post6')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post6')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: March 15, 1960</div>
+</div>
+
+<!-- Post 7: Family Bond -->
+<div class="status-update" id="post7">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Family is everything to me. No matter what happens, we have each other. We’ve been through a lot, but we’ll get through this together. My children are my strength.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post7')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post7')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: March 20, 1960</div>
+</div>
+
+<!-- Post 8: A Mother's Love -->
+<div class="status-update" id="post8">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Sometimes I look at my children and wonder how they grew up so fast. They’ve all come so far, but they’ll always be my babies. I love them with all my heart.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post8')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post8')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: April 1, 1960</div>
+</div>
+
+<!-- Post 9: The Garden's Growth -->
+<div class="status-update" id="post9">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">My garden is growing, but it’s still not the same without Big Walter here. I take care of it for him. Every flower reminds me of his love and how much he wanted us to thrive.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post9')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post9')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: April 5, 1960</div>
+</div>
+
+<!-- Post 10: Reflecting on Her Dreams -->
+<div class="status-update" id="post10">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I’ve always dreamed of a better life for my children. I never had the chance to fulfill all my dreams, but that’s okay because I’ve made sure they have the chance to reach theirs.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post10')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post10')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: April 10, 1960</div>
+</div>
+
+<!-- Post 11: Walter’s Return to Hope -->
+<div class="status-update" id="post11">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I see some change in Walter. He’s been lost for so long, but I think he’s finally starting to understand what really matters. I just hope he makes the right choice for all of us.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post11')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post11')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: April 15, 1960</div>
+</div>
+
+<!-- Post 12: A Mother's Hope for Beneatha -->
+<div class="status-update" id="post12">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Beneatha is growing into such a strong woman. I see the doctor in her future, and I pray she gets the chance to do what she loves. I’ve always told her to never let anyone stop her.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post12')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post12')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: April 20, 1960</div>
+</div>
+
+<!-- Post 13: A Mother's Strength -->
+<div class="status-update" id="post13">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Through everything, I find my strength in my children. They give me the courage to keep going even when it feels like the world is against us.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post13')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post13')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: April 25, 1960</div>
+</div>
+
+<!-- Post 14: A Dream for the Future -->
+<div class="status-update" id="post14">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">My dream for my family has always been a better future. No matter what happens, I want my children to live a life filled with opportunity and dignity.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post14')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post14')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: May 1, 1960</div>
+</div>
+
+<!-- Post 15: The Struggles of Being a Mother -->
+<div class="status-update" id="post15">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Being a mother is the toughest job I’ve ever had. I want nothing more than to see my children succeed, but it hurts to know that sometimes I can’t protect them from the world.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post15')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post15')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: May 5, 1960</div>
+</div>
+
+<!-- Post 16: Beneatha's Future -->
+<div class="status-update" id="post16">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I’m so proud of Beneatha. She’s not just my daughter—she’s a symbol of hope for so many. I know that with her heart and ambition, she will change the world.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post16')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post16')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: May 10, 1960</div>
+</div>
+
+<!-- Post 17: Walter’s Growth -->
+<div class="status-update" id="post17">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I’ve seen a change in Walter. He’s starting to realize what’s truly important in life. It gives me hope that we can all find peace together, no matter where life takes us.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post17')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post17')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: May 15, 1960</div>
+</div>
+
+<!-- Post 18: A Mother's Love for Her Family -->
+<div class="status-update" id="post18">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">No matter the challenges, my love for my children is stronger than anything. It’s all I have, and it’s all I need. They are my everything.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post18')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post18')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: May 20, 1960</div>
+</div>
+
+<!-- Post 19: A Small Victory -->
+<div class="status-update" id="post19">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Today, I feel like I’ve had a small victory. Despite everything, I’ve managed to keep this family together. And that, to me, is everything.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post19')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post19')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: May 25, 1960</div>
+</div>
+
+<!-- Post 20: Reflecting on the Past -->
+<div class="status-update" id="post20">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">Sometimes, I can’t help but reflect on the past. Big Walter would’ve been so proud of what we’ve built. I hope we continue to make him proud.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post20')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post20')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: June 1, 1960</div>
+</div>
+
+<!-- Post 21: A New Beginning -->
+<div class="status-update" id="post21">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">We’re on the verge of a new beginning. No matter what, we’ve come a long way. And now, the journey forward is filled with promise.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post21')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post21')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: June 5, 1960</div>
+</div>
+
+<!-- Post 22: Embracing the Future -->
+<div class="status-update" id="post22">
+    <div class="status-header">Lena Younger</div>
+    <div class="status-text">I am finally ready to embrace the future, whatever it may bring. The struggle is far from over, but I’m confident that with my family by my side, we will find our way.</div>
+    <div class="likes-dislikes">
+        <button onclick="likePost('post22')"><i>👍</i></button>
+        <span class="likes-count">0 Likes</span>
+        <button onclick="dislikePost('post22')"><i>👎</i></button>
+        <span class="dislikes-count">0 Dislikes</span>
+    </div>
+    <div class="post-date">Posted on: June 10, 1960</div>
+</div>
+
+            <!-- Final Post: The Book About My Story -->
+            <div class="status-update" id="post13">
+                <div class="status-header">Lena Younger</div>
+                <div class="status-text">There is now a book about my story. A shout-out to the amazing writer for capturing my journey and the strength of my family. Check it out here: <a href="book_link" target="_blank">The Story of Lena Younger</a>.</div>
+                <div class="likes-dislikes">
+                    <button onclick="likePost('post13')"><i>👍</i></button>
+                    <span class="likes-count">0 Likes</span>
+                    <button onclick="dislikePost('post13')"><i>👎</i></button>
+                    <span class="dislikes-count">0 Dislikes</span>
+                </div>
+                <div class="post-date">Posted on: April 1, 1960</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let postLikes = {
+            post1: 0,
+            post2: 0,
+            post3: 0,
+            post4: 0,
+            post5: 0,
+            post6: 0,
+            post13: 0
+        };
+        let postDislikes = {
+            post1: 0,
+            post2: 0,
+            post3: 0,
+            post4: 0,
+            post5: 0,
+            post6: 0,
+            post13: 0
+        };
+
+        function likePost(postId) {
+            postLikes[postId]++;
+            document.querySelector(`#${postId} .likes-count`).textContent = `${postLikes[postId]} Likes`;
+        }
+
+        function dislikePost(postId) {
+            postDislikes[postId]++;
+            document.querySelector(`#${postId} .dislikes-count`).textContent = `${postDislikes[postId]} Dislikes`;
+        }
+    </script>
+
+</body>
+</html>
